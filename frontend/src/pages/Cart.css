@@ -1,0 +1,146 @@
+/* Cart.css */
+.cart-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    gap: 15px;
+    transition: background-color 0.2s;
+}
+
+.cart-item:hover {
+    background-color: #f9f9f9;
+}
+
+.cart-item div {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item div:first-child {
+    flex: 2;
+    text-align: left;
+    font-weight: 500;
+}
+
+.cart-item div:nth-child(2) {
+    font-weight: 500;
+    color: #0077b6;
+}
+
+.cart-item span {
+    margin: 0 12px;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #f2f2f2;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.remove-btn:hover {
+    color: #e63946;
+    border-color: #e63946;
+}
+
+.proceed-btn {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    margin-top: 30px;
+    float: right;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.proceed-btn:hover {
+    background-color: #00b4d8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 119, 182, 0.2);
+}
+
+h3 {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .cart-container {
+        padding: 15px;
+        margin: 30px auto;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    .cart-item div {
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .cart-item div:first-child {
+        text-align: center;
+    }
+    
+    .proceed-btn {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+}
