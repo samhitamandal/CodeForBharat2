@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+*.env
+!.env.example  # keep example if present
+
+# Compiled output
+dist/
+dist-ssr/
+
+# System files
+.DS_Store
+
+# Coverage
+coverage/
+.nyc_output/
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Migrations (optional)
+backend/prisma/migrations/
+
+# Frontend misc (only if needed)
+frontend/*.local
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
